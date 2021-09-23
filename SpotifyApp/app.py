@@ -68,4 +68,5 @@ def root():
     else: 
         return render_template('predict.html', title = 'home', top_hits = [])
 
-
+if __name__ == "__main__":
+    application.run()
