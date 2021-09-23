@@ -3,7 +3,8 @@ import os
 from flask import Flask, render_template, request
 from models import DB, Song
 from spotify_client import *
-from app import *
+from app import app as application
+app = application
 from wrangle import *
 import lzma
 import pickle
@@ -68,5 +69,3 @@ def root():
     else: 
         return render_template('predict.html', title = 'home', top_hits = [])
 
-if __name__ == "__main__":
-    application.run()
