@@ -1,1 +1,1 @@
-web: gunicorn SpotifyApp:app
+web: gunicorn SpotifyApp:create_app
